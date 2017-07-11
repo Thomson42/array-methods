@@ -38,14 +38,18 @@ describe('map', () =>  {
     });
 });
 
-// describe('filter(array, callback)', () =>  {
-//     it('adds and returns new length', () => {
-//         const array = [1, 2, 3];
-//         const length = arravy.push(array, 4);
-//         assert.equal(length, 4);
-//         assert.equal(array[3], 4);
-//     });
-// });
+describe('filter(array, callback)', () =>  {
+    it('Creates a new array witholing elements that did not pass the test', () => {
+        var words = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+        booleanArray = [];
+        const length = arravy.filter(words, function(word,index){
+            booleanArray[index] = word.length > 6;
+            console.log(booleanArray);
+        });
+        assert.equal(newArray, ["exuberant", "destruction", "present"]);
+        
+    });
+});
 
 // describe('reduce(array, callback [, initialValue])', () =>  {
 //     it('adds and returns new length', () => {

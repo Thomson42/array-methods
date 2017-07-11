@@ -18,11 +18,12 @@ function map(array, callback) {
 
 
 };
-// function filter(array, callback) {
-//   array[array.length] = item;
-//   return array.length;
-// };
-
+function filter(words, callback) {
+  newArray = words
+  for (i = 0; i < words.length; i++) {
+    callback(words[i],i);
+  }
+};
 // function reduce(array, callback [, initialValue]) {
 //   array[array.length] = item;
 //   return array.length;
@@ -41,5 +42,6 @@ function map(array, callback) {
 module.exports = {
     push, 
     forEach,
-    map
+    map,
+    filter
 };
