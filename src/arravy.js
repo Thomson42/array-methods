@@ -21,7 +21,10 @@ function map(array, callback) {
 function filter(words, callback) {
   newArray = words
   for (i = 0; i < words.length; i++) {
-    callback(words[i],i);
+    console.log(booleanArray[i]);
+    if (booleanArray[i] = true) {
+      callback(words[i],i);
+    } 
   }
 };
 // function reduce(array, callback [, initialValue]) {

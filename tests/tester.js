@@ -44,7 +44,7 @@ describe('filter(array, callback)', () =>  {
         booleanArray = [];
         const length = arravy.filter(words, function(word,index){
             booleanArray[index] = word.length > 6;
-            console.log(booleanArray);
+            //console.log(booleanArray);
         });
         assert.equal(newArray, ["exuberant", "destruction", "present"]);
         
